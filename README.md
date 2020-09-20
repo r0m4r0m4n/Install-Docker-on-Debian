@@ -35,6 +35,6 @@ Update the apt package index, and install the latest version of Docker Engine an
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
-Verify that Docker Engine is installed correctly by running the hello-world image.
+Verify that Docker Engine is installed correctly by running the hello-world image:
 
 `sudo docker run hello-world`
