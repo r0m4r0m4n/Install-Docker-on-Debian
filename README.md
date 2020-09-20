@@ -4,7 +4,7 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 
 #SET UP THE REPOSITORY:
 
-#1.Update the apt package index and install packages to allow apt to use a repository over HTTPS:
+Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 sudo apt-get update
 
 sudo apt-get install \
@@ -14,12 +14,12 @@ sudo apt-get install \
     gnupg-agent \
     software-properties-common
 
-#2.Add Docker’s official GPG key:
+Add Docker’s official GPG key:
 
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 
-#3.Use the following command to set up the stable repository:
+Use the following command to set up the stable repository:
 
 sudo add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/debian \
@@ -31,6 +31,6 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
-#Verify that Docker Engine is installed correctly by running the hello-world image.
+Verify that Docker Engine is installed correctly by running the hello-world image.
 
-$ sudo docker run hello-world
+sudo docker run hello-world
