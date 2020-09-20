@@ -1,8 +1,10 @@
-# UNINSTALL OLD VERSIONS:
+# How to Install-Docker-on-Debian
 
-sudo apt-get remove docker docker-engine docker.io containerd runc
+## UNINSTALL OLD VERSIONS:
 
-# SET UP THE REPOSITORY:
+`sudo apt-get remove docker docker-engine docker.io containerd runc`
+
+## SET UP THE REPOSITORY:
 
 Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 sudo apt-get update
@@ -27,11 +29,11 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 ```
-# INSTALL DOCKER ENGINE:
-
+## INSTALL DOCKER ENGINE:
+```
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
-
+```
 Verify that Docker Engine is installed correctly by running the hello-world image.
 
-sudo docker run hello-world
+`sudo docker run hello-world`
