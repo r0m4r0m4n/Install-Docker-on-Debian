@@ -1,4 +1,4 @@
-#Uninstall old versions:
+#UNINSTALL OLD VERSIONS:
 
 sudo apt-get remove docker docker-engine docker.io containerd runc
 
@@ -14,7 +14,7 @@ sudo apt-get install \
     gnupg-agent \
     software-properties-common
 
-#2.Add Docker’s official GPG key:
+#2.Add Dockerâ€™s official GPG key:
 
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
